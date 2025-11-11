@@ -1,2 +1,2 @@
 # FOUDATION-WEBSITE
-![Logo](./assets/logo.png)
+![FOUNDATION-WEBSITE Logo](./assets/logo.png)
