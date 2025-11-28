@@ -1,2 +1,2 @@
 # FOUDATION-WEBSITE
-![FOUNDATION-WEBSITE Logo](solenoid logo gold.png)
+![FOUNDATION-WEBSITE Logo](gold.png)
