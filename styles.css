@@ -380,24 +380,38 @@ width: 500px;
 margin: 25px auto 70px auto;
   }
 
-  /* ---------------------------------- */
+  /* ------------------------------------------------------------------------ */
 
-#Card-1{
-  width: 350px;
-  height: 260px;
+
+  .Cards{
+    display: flex;
+    width: 980px;
+  }
+
+#Card-1,
+#Card-2{
+  width: 230px;
+  height: 340px;
    background: rgba(255, 255, 255, 0.09);
    padding: 32px;
-   border-radius: 15px;
+   border-radius: 5px;
    background-image: linear-gradient(#1a2642,#0f1a2e);
-   
+   margin: 10px 30px;
 }
+
+
 #Auto-icon{
   width:80px;
   height: 80px;
 }
 
+#Shield{
+  width: 70px;
+  height: 70px;
+}
 
-#Auto-icon{
+#Auto-icon,
+#Shield{
   font-size: xx-large;
   font-weight: bolder;
   display: inline-block;
@@ -414,18 +428,21 @@ margin: 25px auto 70px auto;
   }
 }
 
-#Card-1-tle{
+#Card-1-tle,
+#Card-2-tle{
   margin: 0 0 12px;
 }
 
-#Card-1-txt{
+#Card-1-txt,
+#Card-2-txt{
   color:gray;
 }
 
-#Card-1:hover{
+#Card-1:hover,
+#Card-2:hover{
 border: 1px solid #06b6d4;
-height: 280px;
-width: 370px;
+height: 350px;
+width: 240px;
 }
 
 
