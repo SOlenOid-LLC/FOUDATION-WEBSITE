@@ -203,7 +203,7 @@
   overflow: hidden;
 
   /* Vibrant background image */
-  background-image: url("africa-background.png");
+  background-image: url("Images/africa-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -345,3 +345,88 @@
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
 }
+
+
+
+/* NIO */
+/* Styling the OS div */
+.OS{
+  text-align: center;
+
+}
+
+/* Editing 'our services text' */
+.Services{
+  color: #06b6d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 200px;
+}
+
+
+.Services::before,
+.Services::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid  #06b6d4;
+}
+
+.Services span {
+  margin: 0 50%;}
+
+  #eXplain{
+width: 500px;
+margin: 25px auto 70px auto;
+  }
+
+  /* ---------------------------------- */
+
+#Card-1{
+  width: 350px;
+  height: 260px;
+   background: rgba(255, 255, 255, 0.09);
+   padding: 32px;
+   border-radius: 15px;
+   background-image: linear-gradient(#1a2642,#0f1a2e);
+   
+}
+#Auto-icon{
+  width:80px;
+  height: 80px;
+}
+
+
+#Auto-icon{
+  font-size: xx-large;
+  font-weight: bolder;
+  display: inline-block;
+  animation: Auto-icon 1s infinite ease-in-out alternate;
+  margin-bottom: 10px;
+}
+
+@keyframes Auto-icon {
+  from {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
+
+#Card-1-tle{
+  margin: 0 0 12px;
+}
+
+#Card-1-txt{
+  color:gray;
+}
+
+#Card-1:hover{
+border: 1px solid #06b6d4;
+height: 280px;
+width: 370px;
+}
+
+
+/* --------------------------10:09 pm. Logging off.ヾ(￣▽￣) Bye~Bye~ */
