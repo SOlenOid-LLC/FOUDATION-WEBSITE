@@ -367,17 +367,19 @@
 
 .Services::before,
 .Services::after {
-  content: "";
+  content: " ";
   flex: 1;
   border-bottom: 2px solid  #06b6d4;
 }
 
-.Services span {
-  margin: 0 50%;}
+.Services
+.Solutions span {
+  margin: 0 auto;}
 
   #eXplain{
 width: 500px;
 margin: 25px auto 70px auto;
+color: gray;
   }
 
   /* ------------------------------------------------------------------------ */
@@ -385,11 +387,12 @@ margin: 25px auto 70px auto;
 
   .Cards{
     display: flex;
-    width: 980px;
-  }
+    }
 
 #Card-1,
-#Card-2{
+#Card-2,
+#Card-3,
+#Card-4{
   width: 230px;
   height: 340px;
    background: rgba(255, 255, 255, 0.09);
@@ -400,17 +403,17 @@ margin: 25px auto 70px auto;
 }
 
 
-#Auto-icon{
-  width:80px;
-  height: 80px;
-}
-
-#Shield{
+#Shield,
+#Auto-icon,
+#Power,
+#Network{
   width: 70px;
   height: 70px;
 }
 
 #Auto-icon,
+#Network,
+#Power,
 #Shield{
   font-size: xx-large;
   font-weight: bolder;
@@ -429,17 +432,23 @@ margin: 25px auto 70px auto;
 }
 
 #Card-1-tle,
-#Card-2-tle{
+#Card-2-tle,
+#Card-3-tle,
+#Card-4-tle{
   margin: 0 0 12px;
 }
 
 #Card-1-txt,
-#Card-2-txt{
+#Card-2-txt,
+#Card-3-txt,
+#Card-4-txt{
   color:gray;
 }
 
 #Card-1:hover,
-#Card-2:hover{
+#Card-2:hover,
+#Card-3:hover,
+#Card-4:hover{
 border: 1px solid #06b6d4;
 height: 350px;
 width: 240px;
@@ -447,3 +456,20 @@ width: 240px;
 
 
 /* --------------------------10:09 pm. Logging off.ヾ(￣▽￣) Bye~Bye~ */
+
+/* Editing Solutions text' */ 
+.Solutions{
+  color: goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 200px;
+}
+
+
+.Solutions::before,
+.Solutions::after {
+  content: " ";
+  flex: 1;
+  border-bottom: 2px solid  goldenrod;
+}
