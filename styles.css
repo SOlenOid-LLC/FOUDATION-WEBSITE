@@ -367,17 +367,19 @@
 
 .Services::before,
 .Services::after {
-  content: "";
+  content: " ";
   flex: 1;
   border-bottom: 2px solid  #06b6d4;
 }
 
-.Services span {
-  margin: 0 50%;}
+.Services
+.Solutions span {
+  margin: 0 auto;}
 
   #eXplain{
 width: 500px;
 margin: 25px auto 70px auto;
+color: gray;
   }
 
   /* ------------------------------------------------------------------------ */
@@ -454,3 +456,20 @@ width: 240px;
 
 
 /* --------------------------10:09 pm. Logging off.ヾ(￣▽￣) Bye~Bye~ */
+
+/* Editing Solutions text' */ 
+.Solutions{
+  color: goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 200px;
+}
+
+
+.Solutions::before,
+.Solutions::after {
+  content: " ";
+  flex: 1;
+  border-bottom: 2px solid  goldenrod;
+}
