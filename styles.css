@@ -1,3 +1,274 @@
+.hero:hover {
+  transform: scale(1.02); /* slight zoom for interactive effect */
+}
+
+/* =========================
+   Hero content above background
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   Logo Slab (interactive)
+.hero .logo-slab {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 28px;
+  background: rgba(20, 22, 38, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Logo slab hover effect */
+.hero .logo-slab:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.6);
+}
+
+/* Gold glow for logo slab */
+.hero .logo-slab::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 28px;
+  background: radial-gradient(
+    circle at center,
+    rgba(209, 167, 87, 0.1),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+.hero .logo-slab:hover::before {
+  opacity: 1;
+}
+
+/* =========================
+   Interactive Panel
+.hero .interactive-panel {
+  padding: 2rem;
+  border-radius: 32px;
+  background: rgba(20, 22, 38, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Panel hover + lift */
+.hero .interactive-panel:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.65);
+  border-color: rgba(247, 243, 235, 0.2);
+}
+
+/* Gold glow behind panel */
+.hero .interactive-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 32px;
+  background: radial-gradient(
+    circle at center,
+    rgba(209, 167, 87, 0.1),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+.hero .interactive-panel:hover::before {
+  opacity: 1;
+}
+
+/* Panel header text */
+.hero .panel-header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Panel paragraph */
+.hero .panel-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 1rem 0 2rem 0;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* =========================
+   CTA Button
+.hero .cta {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.9rem 2.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+/* Button hover */
+.hero .cta:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* NIO */
+/* Styling the OS div */
+.OS {
+  text-align: center;
+}
+
+/* Editing 'our services text' */
+.Services {
+  color: #06b6d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 200px;
+}
+
+.Services::before,
+.Services::after {
+  content: " ";
+  flex: 1;
+  border-bottom: 2px solid #06b6d4;
+}
+
+.Services .Solutions span {
+  margin: 0 auto;
+}
+
+#eXplain {
+  width: 500px;
+  margin: 25px auto 70px auto;
+  color: gray;
+}
+
+/* ------------------------------------------------------------------------ */
+
+.Cards {
+  display: flex;
+}
+
+#Card-1,
+#Card-2,
+#Card-3,
+#Card-4 {
+  width: 230px;
+  height: 340px;
+  background: rgba(255, 255, 255, 0.09);
+  padding: 32px;
+  border-radius: 5px;
+  background-image: linear-gradient(#1a2642, #0f1a2e);
+  margin: 10px 30px;
+}
+
+#Shield,
+#Auto-icon,
+#Power,
+#Network {
+  width: 70px;
+  height: 70px;
+}
+
+#Auto-icon,
+#Network,
+#Power,
+#Shield {
+  font-size: xx-large;
+  font-weight: bolder;
+  display: inline-block;
+  animation: Auto-icon 1s infinite ease-in-out alternate;
+  margin-bottom: 10px;
+}
+
+@keyframes Auto-icon {
+  from {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
+
+#Card-1-tle,
+#Card-2-tle,
+#Card-3-tle,
+#Card-4-tle {
+  margin: 0 0 12px;
+}
+
+#Card-1-txt,
+#Card-2-txt,
+#Card-3-txt,
+#Card-4-txt {
+  color: gray;
+}
+
+#Card-1:hover,
+#Card-2:hover,
+#Card-3:hover,
+#Card-4:hover {
+  border: 1px solid #06b6d4;
+  height: 350px;
+  width: 240px;
+}
+
+/* Cards are looking a bit rigid so some animations */
+.Card-Container .Cards {
+  border-radius: 28px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card hover effect*/
+.Cards :hover {
+  
+} 
+/* --------------------------10:09 pm. Logging off.ヾ(￣▽￣) Bye~Bye~ */
+
+/* Editing Solutions text' */
+.Solutions {
+  color: goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 200px;
+}
+
+.Solutions::before,
+.Solutions::after {
+  content: " ";
+  flex: 1;
+  border-bottom: 2px solid goldenrod;
+}
 :root {
     --deep: #02030e;
     --gold: #d1a757;
@@ -212,14 +483,12 @@
 
 /* =========================
    Hero background hover subtle movement
-========================= */
 .hero:hover {
   transform: scale(1.02); /* slight zoom for interactive effect */
 }
 
 /* =========================
    Hero content above background
-========================= */
 .hero > * {
   position: relative;
   z-index: 2;
@@ -227,7 +496,6 @@
 
 /* =========================
    Logo Slab (interactive)
-========================= */
 .hero .logo-slab {
   text-align: center;
   padding: 2rem;
@@ -266,7 +534,6 @@
 
 /* =========================
    Interactive Panel
-========================= */
 .hero .interactive-panel {
   padding: 2rem;
   border-radius: 32px;
@@ -322,7 +589,6 @@
 
 /* =========================
    CTA Button
-========================= */
 .hero .cta {
   background: rgba(255, 255, 255, 0.15);
   color: #ffffff;
